@@ -7,7 +7,7 @@ import Home from "./Home";
 import Contact from "./contact";
 import BasicChart from "./chart";
 
-export default function AppRoute() {
+function AppRoute() {
   return (
     <BrowserRouter>
       <Routes>
@@ -22,6 +22,4 @@ export default function AppRoute() {
   );
 }
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppRoute />);
+export default AppRoute;
