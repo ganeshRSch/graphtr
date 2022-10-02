@@ -14,7 +14,7 @@ const Layout = () => {
              <a className="nav-link" href="/">Home</a>
            </li>
            <li className="nav-item">
-             <a className="nav-link" href="/app">Add DataSource</a>
+             <a className="nav-link" href="/addEmployee">Add Employee</a>
            </li>
            <li className="nav-item">
              <a className="nav-link" href="/employee">Employee List</a>

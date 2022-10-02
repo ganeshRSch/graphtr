@@ -37,4 +37,12 @@ public class RestUserController {
 		System.out.println("Mobile :" + user.getMobileNumber());
 
 	}
+
+	@PostMapping(path = "addEmployee", consumes = MediaType.APPLICATION_JSON_VALUE)
+	public void userInput(@RequestBody Employee employee) {
+
+		employeeService.save(employee);
+
+	}
+
 }

@@ -17,17 +17,28 @@ const Employee = () => {
 
 	return (
 		<div className="posts-container">
-			{employee.map((employee) => {
-				return (
-					<div className="post-card" key={employee.id}>
-						<h2 className="post-title">{employee.name}</h2>
-						<p className="post-body">{employee.address}</p>
-						<div className="button">
-							<div className="delete-btn">Delete</div>
-						</div>
-					</div>
-				);
-			})}
+			<table class="table table-striped table-bordered table-sm">
+				<thead>
+					<tr>
+						<th scope="col">Employee Id</th>
+						<th scope="col">Name</th>
+						<th scope="col">City</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					{employee.map((employee) => {
+						return (
+
+							<tr>
+								<td>{employee.id}</td>
+								<td>{employee.name}</td>
+								<td>{employee.address}</td>
+							</tr>
+						);
+					})}
+				</tbody>
+			</table>
 		</div>
 
 

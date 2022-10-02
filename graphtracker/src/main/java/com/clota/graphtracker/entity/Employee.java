@@ -4,8 +4,6 @@ import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity(name = "emp")
@@ -29,18 +27,18 @@ public class Employee {
 	}
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	int id;
+	Integer id;
 	@Column
 	String name;
 	@Column
 	String address;
 
-	public int getId() {
+	
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
