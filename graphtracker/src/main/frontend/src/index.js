@@ -1,27 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import React from 'react';
+import Layout from "./sidebar";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./layout";
-import Home from "./Home";
-import Employee from "./employee";
-import AddEmployee from "./addEmployee";
-import BasicChart from "./chart";
-
-export default function AppRoute() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="addEmployee" element={<AddEmployee />} />
-          <Route path="employee" element={<Employee />} />
-          <Route path="chart" element={<BasicChart />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppRoute />);
+root.render(<Layout />);
