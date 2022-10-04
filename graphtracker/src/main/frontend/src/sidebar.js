@@ -22,14 +22,14 @@ const Sidebar = () => {
 			<div
 				style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}
 			>
-				<CDBSidebar textColor="#fff" backgroundColor="#333">
+				<CDBSidebar textColor="#333" backgroundColor="#f0f0f0">
 					<CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
 						<a
 							href="/"
 							className="text-decoration-none"
 							style={{ color: 'inherit' }}
 						>
-							Sidebar
+							Menu
 						</a>
 					</CDBSidebarHeader>
 
@@ -69,7 +69,7 @@ const Sidebar = () => {
 								padding: '20px 5px',
 							}}
 						>
-							Sidebar Footer
+							Help
 						</div>
 					</CDBSidebarFooter>
 				</CDBSidebar>
