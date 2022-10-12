@@ -4,11 +4,12 @@ import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity(name = "department")
 public class Department {
 
-	@Column
+	@Id
 	Integer id;
 	@Column
 	String name;
